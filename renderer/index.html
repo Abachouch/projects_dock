@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/fontawesome/css/solid.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wraper">
+      <section class="home page" id="home">
+        <div class="folders page--content" id="foldersList"></div>
+        <footer class="footer page--footer">
+          <h1 class="app-title">Projects Dock</h1>
+          <button class="icon" id="addFolder">
+            <i class="fa-solid fa-plus"></i>
+            Add
+          </button>
+        </footer>
+      </section>
+
+      <section class="details page" data-folder-id="" id="details">
+        <header class="page--header" id="folderInfo">
+          <span id="return" class="return">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </span>
+          <div>
+            <h2 id="folderHeading"></h2>
+            <h4 id="folderPath"></h4>
+          </div>
+        </header>
+        <div class="page--content">
+          <div id="externalApps">
+            <h3>open width</h3>
+            <div class="externals">
+              <button type="button" id="explorer">
+                <span class="icon">
+                  <i class="fa-solid fa-folder-open"></i>
+                </span>
+                <span>Explorer</span>
+              </button>
+              <button type="button" id="terminal">
+                <span class="icon">
+                  <i class="fa-solid fa-terminal"></i>
+                </span>
+                <span>Terminal</span>
+              </button>
+              <button type="button" id="vscode">
+                <span class="icon">
+                  <i class="fa-solid fa-infinity"></i>
+                </span>
+                <span>VS Code</span>
+              </button>
+            </div>
+          </div>
+          <div id="scriptsSection">
+            <h3>scripts</h3>
+            <div id="scripts" class="scripts"></div>
+          </div>
+          <div id="noteSection">
+            <h3>Attached note</h3>
+            <button class="note-save" disabled type="button" id="saveNote">
+              Save
+            </button>
+            <textarea class="note" id="noteInput" title="Note"></textarea>
+            <div class="links" id="links"></div>
+            <div class="colors" id="colors"></div>
+          </div>
+          <div id="filesSection">
+            <h3>files</h3>
+            <div id="files" class="files"></div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer--controls">
+            <button title="add file" type="button" id="addFile">
+              <i class="fa-solid fa-file-circle-plus"></i>
+            </button>
+            <button
+              title="remouve this folders"
+              type="button"
+              id="remouveFolder"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="renderer.js" type="module"></script>
+  </body>
+</html>

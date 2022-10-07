@@ -1,0 +1,27 @@
+{
+  "name": "projects_dock",
+  "description": "simple dock app to manage your nodeJS projects",
+  "version": "0.0.1",
+  "main": "main.js",
+  "license": "MIT",
+  "icon": "assets/icon.ico",
+  "author": " ABACHOUCH Youssouf <youssouf.abachouch@gmail.com>",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "project_dock",
+    "win": {
+      "target": "NSIS",
+      "icon": "assets/icon.ico"
+    }
+  },
+  "dependencies": {
+    "nedb-promises": "^6.2.1"
+  },
+  "devDependencies": {
+    "electron": "^21.0.1",
+    "electron-builder": "^23.3.3"
+  }
+}
