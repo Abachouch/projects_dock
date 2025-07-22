@@ -1,0 +1,24 @@
+# Dev
+
+[ ] Create ParseTodoFile(linkToTodoFile:string)
+[!] Create ParseJsonFile(linkToPackageJsonFile:string)
+
+# Design
+
+[x] Design Home Page
+[x] Add colors And themes
+[~] This is A low priority Task
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+[!!] THis one is very very urgent
+[!!] THis one is very urgent
+[!!] THis one is very urgent
+
+# Notes
+
+this line is a note but not a Todo .
